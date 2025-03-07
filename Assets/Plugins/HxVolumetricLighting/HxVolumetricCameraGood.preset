@@ -1,0 +1,947 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HxVolumetricCameraGood
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: ecf64743a1a6b454fb27131f0e59793c,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: RenderOrder
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: callBackImageEffect
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: callBackImageEffectOpaque
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ShadowFix
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: TemporalSampling
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: DitherSpeed
+    value: 0.6256256
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LuminanceFeedback
+    value: 0.8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MaxFeedback
+    value: 0.9
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: NoiseContrast
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ScaledDepthTexture.Array.size
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ScaledDepthTexture.Array.data[0]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ScaledDepthTexture.Array.data[1]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ScaledDepthTexture.Array.data[2]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ScaledDepthTexture.Array.data[3]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: NoiseTexture3D
+    value: 
+    objectReference: {fileID: 11700000, guid: ea166c3018822e44fb93eca537a773fc, type: 2}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e00
+    value: 24.74151
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e01
+    value: -0.09922421
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e02
+    value: 0.52683634
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e03
+    value: 6.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e10
+    value: 0.0000018207184
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e11
+    value: 1.3196955
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e12
+    value: 0.23341212
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e13
+    value: 10.9
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e20
+    value: -11.185569
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e21
+    value: -0.21947518
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e22
+    value: 1.1653163
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e23
+    value: -68.6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e30
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e31
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e32
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrix.e33
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e00
+    value: 27.15252
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e01
+    value: 0.000000011181145
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e02
+    value: 0.000000036862428
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e03
+    value: 0.0000007127862
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e10
+    value: 0.00000020898149
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e11
+    value: 1.3414958
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e12
+    value: -0.000000014683992
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e13
+    value: 0.0000003909508
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e20
+    value: -0.00000010851649
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e21
+    value: 0.000000018494756
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e22
+    value: -1.3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e23
+    value: -0.0000017434508
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e30
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e31
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e32
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMV.e33
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e00
+    value: 13.414958
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e01
+    value: 0.000000004082066
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e02
+    value: 0.000000025869053
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e03
+    value: 0.0000003890841
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e10
+    value: -0.00000028032892
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e11
+    value: -1.3414958
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e12
+    value: -0.0006512791
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e13
+    value: -0.00000088555583
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e20
+    value: -4.2534825e-12
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e21
+    value: 5.9060233e-13
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e22
+    value: -0.00003897548
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e23
+    value: 0.30000898
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e30
+    value: 0.00000010851649
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e31
+    value: -0.000000018494756
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e32
+    value: 1.3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitMatrixMVP.e33
+    value: 0.0000017434508
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitScale.x
+    value: 27.15252
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitScale.y
+    value: 1.3414958
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlitScale.z
+    value: 1.3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: resolution
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: SampleCount
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: DirectionalSampleCount
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MaxDirectionalRayDistance
+    value: 128
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MaxLightDistance
+    value: 128
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Density
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AmbientLightingStrength
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MieScattering
+    value: 0.4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: SunSize
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: SunBleed
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Extinction
+    value: 0.05
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ExtinctionEffect
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FogHeightEnabled
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FogHeight
+    value: 27.45
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FogTransitionSize
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AboveFogPercent
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Ambient
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AmbientSky.r
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AmbientSky.g
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AmbientSky.b
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AmbientSky.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AmbientEquator.r
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AmbientEquator.g
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AmbientEquator.b
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AmbientEquator.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AmbientGround.r
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AmbientGround.g
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AmbientGround.b
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AmbientGround.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AmbientIntensity
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: TintMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: TintColor.r
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: TintColor.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: TintColor.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: TintColor.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: TintColor2.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: TintColor2.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: TintColor2.b
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: TintColor2.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: TintIntensity
+    value: 0.2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: TintGradient
+    value: 0.2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: CurrentTint.x
+    value: 0.2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: CurrentTint.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: CurrentTint.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: CurrentTintEdge.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: CurrentTintEdge.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: CurrentTintEdge.z
+    value: 0.2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: NoiseEnabled
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: NoiseScale.x
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: NoiseScale.y
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: NoiseScale.z
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: NoiseVelocity.x
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: NoiseVelocity.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: NoiseVelocity.z
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ParticleDensitySupport
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: densityResolution
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: densityDistance
+    value: 64
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: TransparencySupport
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: transparencyDistance
+    value: 64
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlurTransparency
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: blurCount
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BlurDepthFalloff
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: DownsampledBlurDepthFalloff
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: UpSampledblurCount
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: DepthThreshold
+    value: 0.06
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: GaussianWeights
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MapToLDR
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: RemoveColorBanding
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e00
+    value: 0.4501894
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e01
+    value: 0.000000033129265
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e02
+    value: -0.20352939
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e03
+    value: -16.708271
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e10
+    value: 0.07376232
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e11
+    value: -0.9838392
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e12
+    value: 0.16315573
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e13
+    value: 21.46638
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e20
+    value: -0.000012150117
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e21
+    value: -0.0000053830468
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e22
+    value: -0.000026875008
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e23
+    value: 0.29829815
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e30
+    value: 0.40525872
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e31
+    value: 0.17954779
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e32
+    value: 0.89639723
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixVP.e33
+    value: 57.0637
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e00
+    value: 0.45045272
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e01
+    value: 0.000116694755
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e02
+    value: -0.20294696
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e03
+    value: -16.671194
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e10
+    value: -0.07443911
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e11
+    value: 0.9835394
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e12
+    value: -0.16465272
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e13
+    value: -21.561676
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e20
+    value: -0.000012150117
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e21
+    value: -0.0000053830468
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e22
+    value: -0.000026875008
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e23
+    value: 0.29829815
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e30
+    value: 0.40525872
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e31
+    value: 0.17954779
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e32
+    value: 0.89639723
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP.e33
+    value: 57.0637
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e00
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e01
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e02
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e03
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e10
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e11
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e12
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e13
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e20
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e21
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e22
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e23
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e30
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e31
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e32
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv.e33
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e00
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e01
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e02
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e03
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e10
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e11
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e12
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e13
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e20
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e21
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e22
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e23
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e30
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e31
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e32
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVP2.e33
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e00
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e01
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e02
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e03
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e10
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e11
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e12
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e13
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e20
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e21
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e22
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e23
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e30
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e31
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e32
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: LastMatrixVPInv2.e33
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e00
+    value: 0.911205
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e01
+    value: 0.000000067055225
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e02
+    value: -0.41195327
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e03
+    value: -33.818344
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e10
+    value: -0.073965356
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e11
+    value: 0.9837493
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e12
+    value: -0.16360483
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e13
+    value: -21.494968
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e20
+    value: -0.40525872
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e21
+    value: -0.17954779
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e22
+    value: -0.89639723
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e23
+    value: -57.0637
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e30
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e31
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e32
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: MatrixV.e33
+    value: 1
+    objectReference: {fileID: 0}
