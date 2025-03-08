@@ -1,16 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PickStuffUp : MonoBehaviour
 {
+    public FirstPersonController firstPersonScript;
+    public SelectionOutlineController outliner;
     public Transform cameraTransform;
     public LayerMask pickupObjectsMask;
+    public LayerMask targetParentMask;
+    public TextMeshProUGUI pickupText;
+    public TextMeshProUGUI throwText;
+
+    public Transform pickupHoldLocation;
+
+    public bool carryingSomething = false;
+    PickupAbleObject currentPickobject;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        pickupText.text = "";
     }
 
     // Update is called once per frame
@@ -19,26 +30,153 @@ public class PickStuffUp : MonoBehaviour
         Ray supercoolray = new Ray( cameraTransform.position, cameraTransform.forward );
         RaycastHit hit;
 
-        if( Physics.Raycast( supercoolray, out hit, 5, pickupObjectsMask ) )
-        {
-            Debug.Log( "hit " + Time.time );
 
-            if( Input.GetMouseButtonDown( 0 ) )
+
+        if( !carryingSomething && Physics.Raycast( supercoolray, out hit, PickUpRaycast.GetDistance(), pickupObjectsMask ) )
+        {
+            if( PickupDatabase.db.ContainsKey( hit.collider.gameObject.GetInstanceID() ) )
             {
-                if( hit.rigidbody != null )
+                currentPickobject = PickupDatabase.db[hit.collider.gameObject.GetInstanceID()];
+
+                if( currentPickobject.pickupBehavior == PickupBehaviorEnum.Push )
                 {
-                    hit.rigidbody.AddForce( cameraTransform.forward * 10, ForceMode.Acceleration );
+                    pickupText.text = "Push";
+                }
+                else if( currentPickobject.pickupBehavior == PickupBehaviorEnum.Pickup )
+                {
+                    pickupText.text = "Pick up";
+                }
+
+                if( Input.GetMouseButtonDown( 0 ) )
+                {
+                    if( currentPickobject.pickupBehavior == PickupBehaviorEnum.Push )
+                    {
+                        if( hit.rigidbody != null )
+                        {
+                            Vector3 forwardVector = cameraTransform.forward;
+                            forwardVector.Scale( new Vector3( 1, 0, 1 ) );
+
+                            hit.rigidbody.AddForce( forwardVector * 500, ForceMode.Acceleration );
+                        }
+                    }
+                    else if( currentPickobject.pickupBehavior == PickupBehaviorEnum.Pickup )
+                    {
+                        carryingSomething = true;
+                        currentPickobject.PickUp( pickupHoldLocation );
+                    }
+
+                    outliner.enabled = false;
+                    outliner.ClearTarget();
                 }
             }
+            else
+            {
+                currentPickobject = null;
+
+                pickupText.text = "";
+            }
+
+            throwText.gameObject.SetActive( false );
         }
         else
         {
-            Debug.Log( "NO HIT" );
+            bool hoveringOverParent = false;
+
+            if( Physics.Raycast( supercoolray, out hit, PickUpRaycast.GetDistance(), targetParentMask ) )
+            {
+                if( hit.collider.gameObject.CompareTag( "Parent" ) )
+                {
+                    hoveringOverParent = true;
+                }
+            }
+
+            if( carryingSomething && hoveringOverParent && pickupText.text == "" )
+            {
+                pickupText.text = "Give";
+                throwText.gameObject.SetActive( false );
+            }
+            else if( !hoveringOverParent )
+            {
+                pickupText.text = "";
+
+                if( carryingSomething )
+                {
+                    throwText.gameObject.SetActive( true );
+                }
+                else
+                {
+                    throwText.gameObject.SetActive( false );
+                }                
+            }
+
+            if( Input.GetMouseButtonDown( 0 ) && carryingSomething )
+            {
+                if( hoveringOverParent )
+                {
+                    currentPickobject.DestroyBecauseGive();
+
+                    SingleParentController parent = hit.collider.gameObject.GetComponent<SingleParentController>();
+
+                    if( parent != null )
+                    {
+                        parent.TriggerThankYou();
+                    }
+                }
+                else
+                {
+                    currentPickobject.Throw( cameraTransform.forward, true );
+                }
+
+                carryingSomething = false;
+            }
+
+            if( carryingSomething && Input.GetKeyDown( KeyCode.F ) )
+            {
+                currentPickobject.Throw( cameraTransform.forward, false );
+
+                carryingSomething = false;
+
+                outliner.enabled = true;
+                outliner.SetTarget();
+            }
+            else if( carryingSomething && Input.GetKeyDown( KeyCode.E ) )
+            {
+                OpenBook();
+            }
+        }
+
+        if( Input.GetMouseButtonUp( 0 ) && !carryingSomething )
+        {
+            outliner.enabled = true;
+            outliner.SetTarget();
         }
     }
 
-    private void FixedUpdate()
+    public void OpenBook()
     {
+        firstPersonScript.DisableFirstPersonController();
 
+        throwText.gameObject.SetActive( false );
+
+        enabled = false;
+    }
+
+    public void PutBookAway()
+    {
+        firstPersonScript.enabled = true;
+        firstPersonScript.Start();       
+
+        outliner.enabled = true;
+        outliner.SetTarget();
+
+        enabled = true;
+    }
+}
+
+public static class PickUpRaycast
+{
+    public static float GetDistance()
+    {
+        return 5;
     }
 }

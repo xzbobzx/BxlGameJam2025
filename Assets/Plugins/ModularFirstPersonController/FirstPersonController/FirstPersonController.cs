@@ -149,7 +149,7 @@ public class FirstPersonController : MonoBehaviour
         }
     }
 
-    void Start()
+    public void Start()
     {
         if(lockCursor)
         {
@@ -196,6 +196,13 @@ public class FirstPersonController : MonoBehaviour
         }
 
         #endregion
+    }
+
+    public void DisableFirstPersonController()
+    {
+        enabled = false;
+        crosshairObject.gameObject.SetActive( false );
+        Cursor.lockState = CursorLockMode.None;
     }
 
     float camRotation;
