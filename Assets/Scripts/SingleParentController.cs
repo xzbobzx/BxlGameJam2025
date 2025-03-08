@@ -18,6 +18,19 @@ public class SingleParentController : MonoBehaviour
 
     public float speed = 3;
 
+    public float thankYouTimer = -1;
+    public GameObject heart;
+
+    private void Awake()
+    {
+        heart.SetActive( false );
+    }
+
+    public void TriggerThankYou()
+    {
+        thankYouTimer = 4;
+        heart.SetActive( true );
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,7 +39,22 @@ public class SingleParentController : MonoBehaviour
 
         Vector3 movement = (directionToTarget * speed) * Time.deltaTime + (Vector3.down * 9.81f * Time.deltaTime);
 
-        if( mover.waitForKiddo )
+
+        if( thankYouTimer >= 0 )
+        {
+            controller.transform.LookAt( new Vector3( mover.kiddo.transform.position.x, transform.position.y, mover.kiddo.transform.position.z ) );
+
+            LookHeadAt( mover.kiddo );
+            StaticLimbs();
+
+            thankYouTimer -= Time.deltaTime;
+
+            if( thankYouTimer < 0 )
+            {
+                heart.SetActive( false );
+            }
+        }
+        else if( mover.waitForKiddo )
         {
             controller.transform.LookAt( new Vector3( mover.kiddo.transform.position.x, transform.position.y, mover.kiddo.transform.position.z ) );
 

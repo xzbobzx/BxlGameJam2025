@@ -160,7 +160,7 @@ public class SelectionOutlineController : MonoBehaviour
         cmd.DrawRenderer(target, TargetMat);
         Graphics.ExecuteCommandBuffer(cmd);
     }
-    void SetTarget()
+    public void SetTarget()
     {
         cmd.SetRenderTarget(Mask);
         cmd.ClearRenderTarget(true, true, Color.black);
@@ -184,7 +184,7 @@ public class SelectionOutlineController : MonoBehaviour
             Debug.LogWarning("No renderer provided for outline.");
         }
     }
-    void ClearTarget()
+    public void ClearTarget()
     {
         Selected = false;
         cmd.ClearRenderTarget(true, true, Color.black);
@@ -197,26 +197,29 @@ public class SelectionOutlineController : MonoBehaviour
     {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, 5f, _pickMask))
+        if (Physics.Raycast(ray, out hit, PickUpRaycast.GetDistance(), _pickMask))
         {
-            TargetRenderer = hit.transform.GetComponent<Renderer>();
-            if (lastTarget == null) lastTarget = TargetRenderer;
-            if (SelectionMode == SelMode.AndChildren)
+            if( PickupDatabase.db.ContainsKey( hit.collider.gameObject.GetInstanceID() ) )
             {
-                if (ChildrenRenderers != null)
+                TargetRenderer = hit.transform.GetComponent<Renderer>();
+                if( lastTarget == null ) lastTarget = TargetRenderer;
+                if( SelectionMode == SelMode.AndChildren )
                 {
-                    Array.Clear(ChildrenRenderers, 0, ChildrenRenderers.Length);
+                    if( ChildrenRenderers != null )
+                    {
+                        Array.Clear( ChildrenRenderers, 0, ChildrenRenderers.Length );
+                    }
+                    ChildrenRenderers = hit.transform.GetComponentsInChildren<Renderer>();
                 }
-                ChildrenRenderers = hit.transform.GetComponentsInChildren<Renderer>();
-            }
 
+                if( TargetRenderer != lastTarget || !Selected )
+                {
+                    SetTarget();
+                }
 
-            if (TargetRenderer != lastTarget || !Selected)
-            {
-                SetTarget();
+                //Debug.DrawRay(transform.position, hit.point - transform.position, Color.blue);
+                lastTarget = TargetRenderer;
             }
-            //Debug.DrawRay(transform.position, hit.point - transform.position, Color.blue);
-            lastTarget = TargetRenderer;
         }
         else
         {
@@ -229,13 +232,13 @@ public class SelectionOutlineController : MonoBehaviour
         }
         //cmd.Blit(OutlineRT,)
 
-        if (Input.GetMouseButton(0))
+        /*if (Input.GetMouseButton(0))
         {
 
         }
         if (Input.GetMouseButtonUp(0) && Selected)
         {
             ClearTarget();
-        }
+        }*/
     }
 }
