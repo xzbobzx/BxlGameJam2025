@@ -59,6 +59,20 @@ public class PickupAbleObject : MonoBehaviour
         }
     }
 
+    public void MoveToBookPlacement( Transform parent )
+    {
+        transform.gameObject.layer = 10;
+        foreach( Transform child in transform )
+        {
+            child.gameObject.layer = 10;
+        }
+
+        transform.parent = parent;
+
+        transform.localScale = Vector3.one * 0.25f;
+        transform.localPosition = Vector3.zero;
+    }
+
     public void DestroyBecauseGive()
     {
         Destroy( gameObject );
