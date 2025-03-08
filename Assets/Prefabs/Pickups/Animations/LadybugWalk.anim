@@ -19,7 +19,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: -9.656, y: -5.221, z: -87.387}
+        value: {x: 14.948, y: -1.396, z: -136.917}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -28,7 +28,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.5
-        value: {x: -9.656, y: 25.22, z: -92.613}
+        value: {x: 14.948, y: -1.396, z: -166.917}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -37,7 +37,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 1
-        value: {x: -9.656, y: -5.221, z: -87.387}
+        value: {x: 14.948, y: -1.396, z: -136.917}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -47,7 +47,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Ladybug (1)
+    path: Worm (9)
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
@@ -60,7 +60,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 1161249474
+      path: 3123555132
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -93,7 +93,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -9.656
+        value: 14.948
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -102,7 +102,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: -9.656
+        value: 14.948
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -111,7 +111,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: -9.656
+        value: 14.948
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -122,7 +122,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: Ladybug (1)
+    path: Worm (9)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -130,7 +130,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -5.221
+        value: -1.396
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -139,7 +139,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 25.22
+        value: -1.396
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -148,7 +148,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: -5.221
+        value: -1.396
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -159,7 +159,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: Ladybug (1)
+    path: Worm (9)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -167,7 +167,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -87.387
+        value: -136.917
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -176,7 +176,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: -92.613
+        value: -166.917
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -185,7 +185,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: -87.387
+        value: -136.917
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -196,7 +196,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: Ladybug (1)
+    path: Worm (9)
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves:
@@ -207,7 +207,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Ladybug (1)
+    path: Worm (9)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -217,7 +217,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Ladybug (1)
+    path: Worm (9)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -227,7 +227,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Ladybug (1)
+    path: Worm (9)
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 0
