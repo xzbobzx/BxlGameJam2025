@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 544433324}
   - component: {fileID: 544433323}
   - component: {fileID: 544433327}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: PickUpAble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -943,32 +943,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648848356}
   m_CullTransparentMesh: 1
---- !u!1 &1655870554 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4459864850019384750, guid: 395f8a508a92e804e886bd0deb1e079f, type: 3}
-  m_PrefabInstance: {fileID: 2147069981}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1655870560 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4459864850019384738, guid: 395f8a508a92e804e886bd0deb1e079f, type: 3}
   m_PrefabInstance: {fileID: 2147069981}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1655870561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655870554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5062c14a3647d440a3ee2dcb94fa2f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mover: {fileID: 1563657162}
-  teleportDistance: 50
-  fadeTime: 3
-  fader: {fileID: 1648848358}
 --- !u!1 &1678982365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,7 +1465,7 @@ MonoBehaviour:
   FogTransitionSize: 5
   MaxLightDistance: 128
   AboveFogPercent: 0.1
-  Offset: {x: 1839.6656, y: 1839.6656, z: 0}
+  Offset: {x: 1882.5402, y: 1882.5402, z: 0}
 --- !u!108 &1824907967
 Light:
   m_ObjectHideFlags: 0
@@ -1781,6 +1760,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1655870561, guid: 395f8a508a92e804e886bd0deb1e079f, type: 3}
+      propertyPath: fader
+      value: 
+      objectReference: {fileID: 1648848358}
+    - target: {fileID: 1655870561, guid: 395f8a508a92e804e886bd0deb1e079f, type: 3}
+      propertyPath: mover
+      value: 
+      objectReference: {fileID: 1563657162}
     - target: {fileID: 4459864850019384738, guid: 395f8a508a92e804e886bd0deb1e079f, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1825,21 +1812,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4459864850019384740, guid: 395f8a508a92e804e886bd0deb1e079f, type: 3}
-      propertyPath: zoomFOV
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4459864850019384740, guid: 395f8a508a92e804e886bd0deb1e079f, type: 3}
-      propertyPath: enableCrouch
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4459864850019384740, guid: 395f8a508a92e804e886bd0deb1e079f, type: 3}
-      propertyPath: useSprintBar
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384750, guid: 395f8a508a92e804e886bd0deb1e079f, type: 3}
       propertyPath: m_Name
       value: FirstPersonController-HX
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344457850218142208, guid: 395f8a508a92e804e886bd0deb1e079f, type: 3}
+      propertyPath: ScaledDepthTexture.Array.data[1]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7019537604792699254, guid: 395f8a508a92e804e886bd0deb1e079f, type: 3}
       propertyPath: m_Enabled
