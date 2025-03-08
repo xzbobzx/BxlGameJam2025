@@ -202,7 +202,8 @@ public class FirstPersonController : MonoBehaviour
     {
         enabled = false;
         crosshairObject.gameObject.SetActive( false );
-        Cursor.lockState = CursorLockMode.None;
+        //Cursor.lockState = CursorLockMode.None;
+        playerCamera.fieldOfView = fov;
     }
 
     float camRotation;

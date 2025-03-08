@@ -18,6 +18,10 @@ public class PickStuffUp : MonoBehaviour
     public bool carryingSomething = false;
     PickupAbleObject currentPickobject;
 
+    public NotebookScript notebook;
+
+    bool hittingSomething = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,12 +34,16 @@ public class PickStuffUp : MonoBehaviour
         Ray supercoolray = new Ray( cameraTransform.position, cameraTransform.forward );
         RaycastHit hit;
 
-
+        hittingSomething = false;
+        bool dontallowOpenBookRandomly = false;
+        bool dontallowPutInBook = false;
 
         if( !carryingSomething && Physics.Raycast( supercoolray, out hit, PickUpRaycast.GetDistance(), pickupObjectsMask ) )
         {
             if( PickupDatabase.db.ContainsKey( hit.collider.gameObject.GetInstanceID() ) )
             {
+                hittingSomething = true;
+                
                 currentPickobject = PickupDatabase.db[hit.collider.gameObject.GetInstanceID()];
 
                 if( currentPickobject.pickupBehavior == PickupBehaviorEnum.Push )
@@ -68,6 +76,8 @@ public class PickStuffUp : MonoBehaviour
                     outliner.enabled = false;
                     outliner.ClearTarget();
                 }
+
+                dontallowOpenBookRandomly = true;
             }
             else
             {
@@ -87,6 +97,10 @@ public class PickStuffUp : MonoBehaviour
                 if( hit.collider.gameObject.CompareTag( "Parent" ) )
                 {
                     hoveringOverParent = true;
+
+                    hittingSomething = true;
+
+                    dontallowPutInBook = true;
                 }
             }
 
@@ -130,19 +144,31 @@ public class PickStuffUp : MonoBehaviour
                 carryingSomething = false;
             }
 
-            if( carryingSomething && Input.GetKeyDown( KeyCode.F ) )
+            if( !dontallowPutInBook )
             {
-                currentPickobject.Throw( cameraTransform.forward, false );
+                if( carryingSomething && Input.GetKeyDown( KeyCode.F ) )
+                {
+                    currentPickobject.Throw( cameraTransform.forward, false );
 
-                carryingSomething = false;
+                    carryingSomething = false;
 
-                outliner.enabled = true;
-                outliner.SetTarget();
-            }
-            else if( carryingSomething && Input.GetKeyDown( KeyCode.E ) )
-            {
-                OpenBook();
-            }
+                    outliner.enabled = true;
+                    outliner.SetTarget();
+                }
+                else if( carryingSomething && Input.GetKeyDown( KeyCode.E ) )
+                {
+                    OpenBook( currentPickobject );
+                    dontallowOpenBookRandomly = true;
+
+                    currentPickobject = null;
+                    carryingSomething = false;
+                }
+            }         
+        }
+
+        if( !carryingSomething && !dontallowOpenBookRandomly && Input.GetKeyDown( KeyCode.E ) )
+        {
+            OpenBookWithoutAnything();
         }
 
         if( Input.GetMouseButtonUp( 0 ) && !carryingSomething )
@@ -152,11 +178,24 @@ public class PickStuffUp : MonoBehaviour
         }
     }
 
-    public void OpenBook()
+    public void OpenBook( PickupAbleObject thing )
     {
         firstPersonScript.DisableFirstPersonController();
 
         throwText.gameObject.SetActive( false );
+
+        notebook.EnableNotebook( thing, false );
+
+        enabled = false;
+    }
+
+    public void OpenBookWithoutAnything()
+    {
+        firstPersonScript.DisableFirstPersonController();
+
+        throwText.gameObject.SetActive( false );
+
+        notebook.EnableNotebook( null, true );
 
         enabled = false;
     }
@@ -164,7 +203,7 @@ public class PickStuffUp : MonoBehaviour
     public void PutBookAway()
     {
         firstPersonScript.enabled = true;
-        firstPersonScript.Start();       
+        firstPersonScript.Start();
 
         outliner.enabled = true;
         outliner.SetTarget();
