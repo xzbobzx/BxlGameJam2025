@@ -134,7 +134,7 @@ MonoBehaviour:
   cameraTransform: {fileID: 4459864851310106429}
   pickupObjectsMask:
     serializedVersion: 2
-    m_Bits: 2147483648
+    m_Bits: 2147483712
 --- !u!114 &1655870561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,6 +421,7 @@ GameObject:
   - component: {fileID: 4459864851310106429}
   - component: {fileID: 4459864851310106426}
   - component: {fileID: 4459864851310106427}
+  - component: {fileID: 962984717991941049}
   - component: {fileID: 4382977268957880717}
   - component: {fileID: 6446838573983230948}
   - component: {fileID: 6344457850218142208}
@@ -500,6 +501,28 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4459864851310106424}
   m_Enabled: 1
+--- !u!114 &962984717991941049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4459864851310106424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e950cacae63d61a4e821edb397a8cd95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectionMode: 1
+  OutlineType: 1
+  AlphaMode: 0
+  OutlineColor: {r: 1, g: 0.55, b: 0, a: 1}
+  OccludedColor: {r: 0.5, g: 0.9, b: 0.3, a: 1}
+  OutlineWidth: 0.2
+  OutlineHardness: 0.85
+  _pickMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &4382977268957880717
 MonoBehaviour:
   m_ObjectHideFlags: 0
