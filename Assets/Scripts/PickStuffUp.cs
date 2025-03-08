@@ -31,6 +31,10 @@ public class PickStuffUp : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            Debug.Log( "NO HIT" );
+        }
     }
 
     private void FixedUpdate()
