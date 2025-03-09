@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.IO;
 
 public class PickStuffUp : MonoBehaviour
 {
+    public MoveMomDadTarget mover;
     public FirstPersonController firstPersonScript;
     public SelectionOutlineController outliner;
     public Transform cameraTransform;
@@ -31,12 +33,24 @@ public class PickStuffUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if( Input.GetKeyDown( KeyCode.Escape ) && !Application.isEditor )
+        {
+            Application.Quit();
+        }
+
         Ray supercoolray = new Ray( cameraTransform.position, cameraTransform.forward );
         RaycastHit hit;
 
         hittingSomething = false;
         bool dontallowOpenBookRandomly = false;
         bool dontallowPutInBook = false;
+
+        if( mover.endOfTheLine && ( Vector3Helpers.GetHorizontalDistance( transform.position, mover.mom.position ) < 3 || Vector3Helpers.GetHorizontalDistance( transform.position, mover.dad.position ) < 3 ) )
+        {
+            OpenBookEnd();
+
+            return;
+        }
 
         if( !carryingSomething && Physics.Raycast( supercoolray, out hit, PickUpRaycast.GetDistance(), pickupObjectsMask ) )
         {
@@ -176,6 +190,32 @@ public class PickStuffUp : MonoBehaviour
             outliner.enabled = true;
             outliner.SetTarget();
         }
+    }
+
+    void TakeScreenshot()
+    {
+        string path = System.Environment.GetFolderPath( System.Environment.SpecialFolder.Desktop );
+
+        var now = System.DateTime.Now;
+
+        path = Path.Combine( path, "SundayWalk " + Random.Range(1000, 10000) + ".png" );
+
+        ScreenCapture.CaptureScreenshot( path );
+
+        Debug.Log( "Take Screenshot!" );
+    }
+
+    public void OpenBookEnd()
+    {
+        firstPersonScript.DisableFirstPersonController();
+
+        throwText.gameObject.SetActive( false );
+
+        notebook.EnableNotebook( null, false, true );
+
+        TakeScreenshot();
+
+        enabled = false;
     }
 
     public void OpenBook( PickupAbleObject thing )

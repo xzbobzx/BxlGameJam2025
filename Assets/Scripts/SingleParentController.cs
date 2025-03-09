@@ -39,8 +39,14 @@ public class SingleParentController : MonoBehaviour
 
         Vector3 movement = (directionToTarget * speed) * Time.deltaTime + (Vector3.down * 9.81f * Time.deltaTime);
 
+        if( mover.endOfTheLine )
+        {
+            controller.transform.LookAt( new Vector3( mover.kiddo.transform.position.x, transform.position.y, mover.kiddo.transform.position.z ) );
 
-        if( thankYouTimer >= 0 )
+            LookHeadAt( mover.kiddo );
+            PartyLimbs();
+        }
+        else if( thankYouTimer >= 0 )
         {
             controller.transform.LookAt( new Vector3( mover.kiddo.transform.position.x, transform.position.y, mover.kiddo.transform.position.z ) );
 
@@ -86,6 +92,14 @@ public class SingleParentController : MonoBehaviour
     void LookHeadAt( Transform lookatTarget )
     {
         headHolder.LookAt( lookatTarget );
+    }
+
+    void PartyLimbs()
+    {
+        arm1.localEulerAngles = new Vector3( 90, 0, 0 );
+        arm2.localEulerAngles = new Vector3( 90, 0, 0 );
+        leg1.localEulerAngles = new Vector3( -90, 0, 0 );
+        leg2.localEulerAngles = new Vector3( -90, 0, 0 );
     }
 
     void StaticLimbs()

@@ -24,6 +24,7 @@ public class MoveMomDadTarget : MonoBehaviour
 
     public bool waitForKiddo = false;
     public bool superWaitForKiddo = false;
+    public bool endOfTheLine = false;
 
     private void Start()
     {
@@ -42,6 +43,12 @@ public class MoveMomDadTarget : MonoBehaviour
             if( targetWaypoint.AreWeCloseEnoughForNextWaypoint( transform ) )
             {
                 targetWaypoint = targetWaypoint.GetNextWaypoint();
+
+                if( targetWaypoint == null )
+                {
+                    endOfTheLine = true;
+                    enabled = false;
+                }
             }
         }
 

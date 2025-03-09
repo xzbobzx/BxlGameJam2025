@@ -14,6 +14,7 @@ public class NotebookScript : MonoBehaviour
 
     private bool allowClose = false;
     private bool dontPlaceAnything = false;
+    private bool gameIsOver = false;
 
     // Start is called before the first frame update
     void Start()
@@ -40,20 +41,24 @@ public class NotebookScript : MonoBehaviour
             allowClose = true;
         }
 
-        if( dontPlaceAnything && Input.GetKeyUp( KeyCode.E ) )
+        if( dontPlaceAnything && !gameIsOver && Input.GetKeyUp( KeyCode.E ) )
         {
             allowClose = true;
         }
 
-        if( Input.GetKeyDown( KeyCode.E ) && allowClose )
+        if( Input.GetKeyDown( KeyCode.E ) && allowClose && !gameIsOver )
         {
             DisableNotebook();
         }
     }
 
-    public void EnableNotebook( PickupAbleObject thingToPlace, bool allowCloseAnytime )
+    public void EnableNotebook( PickupAbleObject thingToPlace, bool allowCloseAnytime, bool gameEnd = false )
     {
-        if( thingToPlace != null )
+        if( gameEnd )
+        {
+            notebookTutorialText.text = "Thank you for playing Sunday Walk :)";
+        }
+        else if( thingToPlace != null )
         {
             notebookTutorialText.text = "Put the thing anywhere :)";
 
@@ -68,7 +73,7 @@ public class NotebookScript : MonoBehaviour
         gameObject.SetActive( true );        
         notebookTutorialText.gameObject.SetActive( true );        
 
-        if( allowCloseAnytime )
+        if( allowCloseAnytime || gameEnd )
         {
             dontPlaceAnything = true;
         }
@@ -76,6 +81,8 @@ public class NotebookScript : MonoBehaviour
         {
             dontPlaceAnything = false;
         }
+
+        gameIsOver = gameEnd;
 
         allowClose = false;
     }

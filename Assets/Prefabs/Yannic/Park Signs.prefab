@@ -1,0 +1,473 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3838727548019871123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6614057105169697428}
+  m_Layer: 0
+  m_Name: Park Signs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6614057105169697428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3838727548019871123}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1670942640146265156}
+  - {fileID: 5313593450204859516}
+  - {fileID: 5313593450916191512}
+  - {fileID: 5313593451585195052}
+  - {fileID: 5313593450642281267}
+  - {fileID: 5313593450912137083}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3902529586708751944
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6614057105169697428}
+    m_Modifications:
+    - target: {fileID: 200505678982536924, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_Name
+      value: Park Sign (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813326580789170637, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_text
+      value: You are on a sunday walk with your parents
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813326580789170637, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_fontSize
+      value: 5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -857.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 154.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7046166
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7046166
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.059291344
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.059291385
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 9.62
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+--- !u!4 &5313593450916191512 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+  m_PrefabInstance: {fileID: 3902529586708751944}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3902529586721457195
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6614057105169697428}
+    m_Modifications:
+    - target: {fileID: 200505678982536924, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_Name
+      value: Park Sign (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813326580789170637, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_text
+      value: 'Credits:
+
+
+        Thibaut Zadina
+
+        Badie Bakiri
+
+        Yannic
+        Geurts'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813326580789170637, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_fontSize
+      value: 4.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -881.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 196.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.027112486
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.02711253
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7065869
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7065868
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 184.395
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+--- !u!4 &5313593450912137083 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+  m_PrefabInstance: {fileID: 3902529586721457195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3902529587377764220
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6614057105169697428}
+    m_Modifications:
+    - target: {fileID: 200505678982536924, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_Name
+      value: Park Sign (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813326580789170637, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_text
+      value: Pick up things and put them in your notebook
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813326580789170637, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_fontSize
+      value: 5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -868.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 154.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70530736
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.70530736
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.05041421
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.050414164
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -8.177
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+--- !u!4 &5313593451585195052 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+  m_PrefabInstance: {fileID: 3902529587377764220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3902529588227749676
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6614057105169697428}
+    m_Modifications:
+    - target: {fileID: 200505678982536924, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_Name
+      value: Park Sign (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813326580789170637, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_text
+      value: Welcome to 2003
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813326580789170637, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_fontSize
+      value: 9.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -837.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 155.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7018259
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7018259
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.08625783
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.086257786
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -14.014
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+--- !u!4 &5313593450204859516 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+  m_PrefabInstance: {fileID: 3902529588227749676}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3902529588599302243
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6614057105169697428}
+    m_Modifications:
+    - target: {fileID: 200505678982536924, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_Name
+      value: Park Sign (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813326580789170637, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_text
+      value: 'dont stray too far :)
+
+
+        you will be teleported back to your
+        parents'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813326580789170637, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_fontSize
+      value: 4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -881.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 153.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7054521
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.70545214
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.048346058
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.048346076
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 7.841
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+--- !u!4 &5313593450642281267 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+  m_PrefabInstance: {fileID: 3902529588599302243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7540536052854886164
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6614057105169697428}
+    m_Modifications:
+    - target: {fileID: 200505678982536924, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_Name
+      value: Park Sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813326580789170637, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_text
+      value: 'That way
+
+        < - - - -'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813326580789170637, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_fontSize
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -910.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 152.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.560856
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.56085604
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.43062815
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4306281
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 75.034
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+--- !u!4 &1670942640146265156 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9193321202004376400, guid: 2430a7f39f449f94c8494e2722205e71, type: 3}
+  m_PrefabInstance: {fileID: 7540536052854886164}
+  m_PrefabAsset: {fileID: 0}
