@@ -12,6 +12,8 @@ public class PickStuffUp : MonoBehaviour
     public LayerMask targetParentMask;
     public TextMeshProUGUI pickupText;
     public TextMeshProUGUI throwText;
+    public AudioClip PickUpSound;
+    public AudioSource AudioSource;
 
     public Transform pickupHoldLocation;
 
@@ -71,6 +73,9 @@ public class PickStuffUp : MonoBehaviour
                     {
                         carryingSomething = true;
                         currentPickobject.PickUp( pickupHoldLocation );
+
+                        AudioSource.clip = PickUpSound;
+                        AudioSource.Play();
                     }
 
                     outliner.enabled = false;
