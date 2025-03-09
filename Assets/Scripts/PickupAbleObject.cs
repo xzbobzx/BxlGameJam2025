@@ -9,7 +9,10 @@ public class PickupAbleObject : MonoBehaviour
 {
     public PickupBehaviorEnum pickupBehavior;
 
+    public Vector3 notebookEulerAngles;
+
     private float mass;
+    private float drag;
     private Vector3 originalSize;
 
     public Rigidbody rb;
@@ -18,6 +21,7 @@ public class PickupAbleObject : MonoBehaviour
     private void Awake()
     {
         mass = rb.mass;
+        drag = rb.drag;
         originalSize = transform.localScale;
 
         int instanceID = gameObject.GetInstanceID();
@@ -51,6 +55,7 @@ public class PickupAbleObject : MonoBehaviour
 
         rb = gameObject.AddComponent<Rigidbody>();
         rb.mass = mass;
+        rb.drag = drag;
         col.enabled = true;
 
         if( !drop )
@@ -71,7 +76,7 @@ public class PickupAbleObject : MonoBehaviour
 
         transform.localScale = transform.localScale * 0.1f;
         transform.localPosition = Vector3.zero;
-        //transform.localRotation = Quaternion.identity;
+        transform.localEulerAngles = notebookEulerAngles;
     }
 
     public void DestroyBecauseGive()
