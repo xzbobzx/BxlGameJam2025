@@ -12703,6 +12703,10 @@ PrefabInstance:
       propertyPath: pickupText
       value: 
       objectReference: {fileID: 603128667}
+    - target: {fileID: 4382977268957880717, guid: 395f8a508a92e804e886bd0deb1e079f, type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: 5996562247bf5204fadb63c6540335cf, type: 2}
     - target: {fileID: 4459864850019384738, guid: 395f8a508a92e804e886bd0deb1e079f, type: 3}
       propertyPath: m_RootOrder
       value: 177
@@ -19686,7 +19690,7 @@ MonoBehaviour:
   FogTransitionSize: 5
   MaxLightDistance: 128
   AboveFogPercent: 0.1
-  Offset: {x: 1842.8306, y: 1842.8306, z: 0}
+  Offset: {x: 1872.6276, y: 1872.6276, z: 0}
 --- !u!108 &1824907967
 Light:
   m_ObjectHideFlags: 0
