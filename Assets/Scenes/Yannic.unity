@@ -15010,7 +15010,7 @@ MonoBehaviour:
   FogTransitionSize: 5
   MaxLightDistance: 128
   AboveFogPercent: 0.1
-  Offset: {x: 3349.086, y: 3349.086, z: 0}
+  Offset: {x: 3359.8633, y: 3359.8633, z: 0}
 --- !u!108 &1824907967
 Light:
   m_ObjectHideFlags: 0
@@ -18539,7 +18539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8770813211429920011, guid: c80b0445a6688f64dab05aeffe8d5bc6, type: 3}
       propertyPath: amountOfThingsToSpawn
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c80b0445a6688f64dab05aeffe8d5bc6, type: 3}

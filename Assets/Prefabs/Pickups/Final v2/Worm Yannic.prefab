@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 8334284286695788593}
   m_LocalRotation: {x: -0.50000006, y: -0.5, z: -0.5, w: 0.50000006}
   m_LocalPosition: {x: -893.86, y: 0.15, z: 169.87}
-  m_LocalScale: {x: -0.15958309, y: -0.82676065, z: -0.15958312}
+  m_LocalScale: {x: 0.1595831, y: 0.8267606, z: 0.1595831}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -146,5 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   body: {fileID: 9042455734407645241}
+  sineAngle: 20
+  sineSpeed: 15
   randomTicker: 3
   randomTorque: 0
