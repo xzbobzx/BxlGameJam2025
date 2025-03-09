@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GoForward : MonoBehaviour
 {
+    public int Speed;
     public Rigidbody body;
     // Start is called before the first frame update
     void Start()
@@ -14,6 +15,7 @@ public class GoForward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        body.velocity = Vector3.right * 50 * Time.deltaTime;
+        body.velocity = transform.up * Speed * Time.deltaTime;
+        body.AddForce(Vector3.down * Speed * 2);
     }
 }

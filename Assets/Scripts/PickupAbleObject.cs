@@ -69,8 +69,9 @@ public class PickupAbleObject : MonoBehaviour
 
         transform.parent = parent;
 
-        transform.localScale = Vector3.one * 0.25f;
+        transform.localScale = transform.localScale * 0.1f;
         transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.Euler(90,0,0 );
     }
 
     public void DestroyBecauseGive()
