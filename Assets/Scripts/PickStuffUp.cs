@@ -12,7 +12,7 @@ public class PickStuffUp : MonoBehaviour
     public LayerMask targetParentMask;
     public TextMeshProUGUI pickupText;
     public TextMeshProUGUI throwText;
-    public AudioClip PickUpSound;
+    public AudioClip PickUpSound, OpenSound, BookClose;
     public AudioSource AudioSource;
 
     public Transform pickupHoldLocation;
@@ -185,6 +185,9 @@ public class PickStuffUp : MonoBehaviour
 
     public void OpenBook( PickupAbleObject thing )
     {
+        AudioSource.clip = OpenSound;
+        AudioSource.Play();
+
         firstPersonScript.DisableFirstPersonController();
 
         throwText.gameObject.SetActive( false );
@@ -196,6 +199,9 @@ public class PickStuffUp : MonoBehaviour
 
     public void OpenBookWithoutAnything()
     {
+        AudioSource.clip = OpenSound;
+        AudioSource.Play();
+
         firstPersonScript.DisableFirstPersonController();
 
         throwText.gameObject.SetActive( false );
@@ -207,6 +213,9 @@ public class PickStuffUp : MonoBehaviour
 
     public void PutBookAway()
     {
+        AudioSource.clip = BookClose;
+        AudioSource.Play();
+
         firstPersonScript.enabled = true;
         firstPersonScript.Start();
 
